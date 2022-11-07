@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: miahmadi <miahmadi@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/25 18:42:39 by miahmadi          #+#    #+#              #
-#    Updated: 2022/10/25 20:21:41 by miahmadi         ###   ########.fr        #
+#    Updated: 2022/11/07 02:51:22 by miahmadi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,13 @@ AR = ar rcs
 RM = rm -f
 
 FILES = main \
+		utils_1 \
+		utils_2 \
+		utils_3 \
+		utils_4 \
+		utils_5 \
+		utils_6 \
+		utils_7 \
 
 FILES_B = 	ft_lstnew \
 
@@ -62,7 +69,7 @@ clean:
 	@cd $(LIBFT) && $(MAKE) clean
 
 fclean: clean
-	$(RM) $(NAME) $(PROG)
+	$(RM) $(NAME) $(PROG) libmlx.dylib
 	@cd $(LIBFT) && $(MAKE) fclean
 
 re: clean all
